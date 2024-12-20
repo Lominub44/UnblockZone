@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+</head>
+<body>
+    <h1>Embedded Page</h1>
+    <div id="content" style="border: 1px solid black; padding: 10px;"></div>
+
+    <script>
+        async function loadPage(url) {
+            try {
+                const response = await fetch(url);
+                if (response.ok) {
+                    const html = await response.text();
+                    document.getElementById('content').innerHTML = html;
+                } else {
+                    document.getElementById('content').innerHTML = 'Error loading page.';
+                }
+            } catch (error) {
+                document.getElementById('content').innerHTML = 'Failed to fetch content.';
+            }
+        }
+
+        // Lade die Zielseite
+        loadPage('https://poki.com/de/g/subway-surfers');
+    </script>
+</body>
+</html>
