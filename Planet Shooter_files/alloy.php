@@ -1,1 +1,0 @@
-jsonpCallback({"showAds":true,"adsTxtResult":{"valid":true,"reason":"Trial without ads.txt check"},"showAdBlockerWarning":true});
