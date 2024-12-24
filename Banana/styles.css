@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "galbasic";
+  src:url("galbasic.ttf") format('truetype');
+}
+
+
+body {
+  text-align: center;
+  font-family: galbasic;
+  background-color: yellow;
+}
+
+#score {
+  font-size: 30px;
+}
