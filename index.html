@@ -16,23 +16,29 @@
             margin-top: 20px;
             color: #333;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 20px auto;
-            max-width: 400px;
+        .game-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
-        li {
-            margin: 10px 0;
-        }
-        a {
+        .game {
             text-decoration: none;
             color: #4CAF50;
             font-size: 18px;
             border: 1px solid #4CAF50;
-            padding: 10px 20px;
             border-radius: 5px;
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+        .game img {
+            width: 100px; /* Adjust thumbnail size */
+            height: 100px; /* Adjust thumbnail size */
+            margin-bottom: 10px;
         }
         a:hover {
             background-color: #4CAF50;
@@ -42,21 +48,60 @@
 </head>
 <body>
     <h1>UnblockZone</h1>
-    <p>Here all available games:</p>
-    <ul>
-        <li><a href="Banana/index.html">Banana</a></li>
-        <li><a href="2048-Game-main/index.html">2048</a></li>
-        <li><a href="Offline-HTML-Games-main/Games/brick-breaker.html">Brick Breaker</a></li>
-        <li><a href="Offline-HTML-Games-main/Games/Connect the Pipes.html">Connect the Pipes</a></li>
-        <li><a href="Offline-HTML-Games-main/Games/HTML Tower Defence.html">HTML Tower Defence</a></li>
-        <li><a href="Offline-HTML-Games-main/Games/maze.html">Maze</a></li>
-        <li><a href="Offline-HTML-Games-main/Games/mini_car_game.html">Mini car game</a></li>
-        <li><a href="Offline-HTML-Games-main/Games/slopeoffline.html">Slope</a></li>
-        <li><a href="Offline-HTML-Games-main/Games/Snakegame.html">Snake</a></li>
-        <li><a href="Offline-HTML-Games-main/Games/tetris.html">Tetris</a></li>
-        <li><a href="Offline-HTML-Games-main/Games/tic-tac-toe.html">Tic Tac Toe (2 Player)</a></li>
-    </ul>
-    <p>credits coming soon&trade;</p>
+    <br>
+    <p style="font-size: 20px;">Available Games:</p>
+    <div class="game-container">
+        <a class="game" href="Banana/index.html">
+            <img src="thumbnails/Banana.png" alt="Banana Thumbnail">
+            Banana
+        </a>
+        <a class="game" href="2048-Game-main/index.html">
+            <img src="thumbnails/2048.png" alt="2048 Thumbnail">
+            2048
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/brick-breaker.html">
+            <img src="thumbnails/brick-breaker.png" alt="Brick Breaker Thumbnail">
+            Brick Breaker
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/Connect the Pipes.html">
+            <img src="thumbnails/ConnectThePipes.png" alt="Connect the Pipes Thumbnail">
+            Connect the Pipes
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/HTML Tower Defence.html">
+            <img src="thumbnails/TowerDefence.png" alt="HTML Tower Defence Thumbnail">
+            HTML Tower Defence
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/maze.html">
+            <img src="thumbnails/maze.png" alt="Maze Thumbnail">
+            Maze
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/mini_car_game.html">
+            <img src="thumbnails/MiniCarGame.png" alt="Mini Car Game Thumbnail">
+            Mini car game
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/slopeoffline.html">
+            <img src="thumbnails/Slope.png" alt="Slope Thumbnail">
+            Slope
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/Snakegame.html">
+            <img src="thumbnails/Snake.png" alt="Snake Thumbnail">
+            Snake
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/tetris.html">
+            <img src="thumbnails/Tetris.png" alt="Tetris Thumbnail">
+            Tetris
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/tic-tac-toe.html">
+            <img src="thumbnails/TicTacToe.png" alt="Tic Tac Toe Thumbnail">
+            Tic Tac Toe (2 Player)
+        </a>
+    </div>
+    
+    <br>
+    <p>credits: <a href="https://github.com/oldj/html5-tower-defense">oldj/html5 tower defense</a>,
+    <a href="https://github.com/Dystopia-user181/connect-pipes-polygonal">Dyst opia user181/connect pipes polygonal</a>,
+    <a href="https://github.com/Metroxe/one-html-page-challenge">Metroxe/one html page challenge</a>,
+    <a href="https://github.com/ImKennyYip/2048">ImKennyYip/2048</a>
+    </p>
 </body>
 </html>
-
