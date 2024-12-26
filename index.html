@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>UnblockZone</title>
     <style>
         body {
@@ -12,10 +13,13 @@
             margin: 20;
             padding: 0;
         }
+        
         h1 {
+            font-size: 40px;
             margin-top: 20px;
             color: #333;
         }
+        
         .game-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -24,6 +28,7 @@
             max-width: 1200px;
             margin: auto;
         }
+        
         .game {
             text-decoration: none;
             color: #4CAF50;
@@ -35,14 +40,43 @@
             align-items: center;
             padding: 10px;
         }
+
         .game img {
-            width: 100px; /* Adjust thumbnail size */
-            height: 100px; /* Adjust thumbnail size */
+            width: 200px;
+            height: 200px;
             margin-bottom: 10px;
         }
+
+        .game-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .new-badge {
+            background-color: red;
+            color: white;
+            padding: 1px 3px;
+            text-align: center;
+            border-radius: 5px;
+            margin-left: 8px;
+        }
+
+        .homemade-badge {
+            background-color: blue;
+            color: white;
+            padding: 1px 3px;
+            text-align: center;
+            border-radius: 5px;
+            margin-left: 8px;
+        }
+
         a:hover {
             background-color: #4CAF50;
             color: white;
+        }
+
+        .ad-window:hover {
+            background-color: white; !important;
         }
     </style>
 </head>
@@ -53,51 +87,86 @@
     <div class="game-container">
         <a class="game" href="Banana/index.html">
             <img src="thumbnails/Banana.png" alt="Banana Thumbnail">
-            Banana
+            <div class="game-info">
+                <span>Banana</span>
+                <span class="homemade-badge"><ion-icon name="home"></ion-icon></span>
+            </div>
         </a>
         <a class="game" href="2048-Game-main/index.html">
             <img src="thumbnails/2048.png" alt="2048 Thumbnail">
-            2048
+            <div class="game-info">
+                <span>2048</span>
+            </div>
         </a>
-        <a class="game" href="Offline-HTML-Games-main/Games/brick-breaker.html">
-            <img src="thumbnails/brick-breaker.png" alt="Brick Breaker Thumbnail">
-            Brick Breaker
+        <a class="game" href="clumsy-bird/index.html">
+            <img src="thumbnails/clumsy-bird.png" alt="clumsy-bird Thumbnail">
+            <div class="game-info">
+                <span>clumsy-bird</span>
+                <span class="new-badge"><ion-icon name="flame"></ion-icon></span>
+            </div>
         </a>
-        <a class="game" href="Offline-HTML-Games-main/Games/Connect the Pipes.html">
-            <img src="thumbnails/ConnectThePipes.png" alt="Connect the Pipes Thumbnail">
-            Connect the Pipes
-        </a>
-        <a class="game" href="Offline-HTML-Games-main/Games/HTML Tower Defence.html">
-            <img src="thumbnails/TowerDefence.png" alt="HTML Tower Defence Thumbnail">
-            HTML Tower Defence
-        </a>
-        <a class="game" href="Offline-HTML-Games-main/Games/maze.html">
-            <img src="thumbnails/maze.png" alt="Maze Thumbnail">
-            Maze
-        </a>
-        <a class="game" href="Offline-HTML-Games-main/Games/mini_car_game.html">
-            <img src="thumbnails/MiniCarGame.png" alt="Mini Car Game Thumbnail">
-            Mini car game
+        <a class="ad-window">
+            <img src="https://placehold.jp/3d4070/ffffff/250x250.png?text=a%20ad%20might%20be%20here%20soon"/>
         </a>
         <a class="game" href="Offline-HTML-Games-main/Games/slopeoffline.html">
             <img src="thumbnails/Slope.png" alt="Slope Thumbnail">
-            Slope
+            <div class="game-info">
+                <span>Slope</span>
+            </div>
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/brick-breaker.html">
+            <img src="thumbnails/brick-breaker.png" alt="Brick Breaker Thumbnail">
+            <div class="game-info">
+                <span>Brick Breaker</span>
+            </div>
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/Connect the Pipes.html">
+            <img src="thumbnails/ConnectThePipes.png" alt="Connect the Pipes Thumbnail">
+            <div class="game-info">
+                <span>Connect the Pipes</span>
+            </div>
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/HTML Tower Defence.html">
+            <img src="thumbnails/TowerDefence.png" alt="HTML Tower Defence Thumbnail">
+            <div class="game-info">
+                <span>Tower Defence</span>
+            </div>
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/maze.html">
+            <img src="thumbnails/maze.png" alt="Maze Thumbnail">
+            <div class="game-info">
+                <span>Maze</span>
+            </div>
+        </a>
+        <a class="game" href="Offline-HTML-Games-main/Games/mini_car_game.html">
+            <img src="thumbnails/MiniCarGame.png" alt="Mini Car Game Thumbnail">
+            <div class="game-info">
+                <span>Mini car game</span>
+            </div>
         </a>
         <a class="game" href="Offline-HTML-Games-main/Games/Snakegame.html">
             <img src="thumbnails/Snake.png" alt="Snake Thumbnail">
-            Snake
+            <div class="game-info">
+                <span>Snake</span>
+            </div>
         </a>
         <a class="game" href="Offline-HTML-Games-main/Games/tetris.html">
             <img src="thumbnails/Tetris.png" alt="Tetris Thumbnail">
-            Tetris
+            <div class="game-info">
+                <span>Tetris</span>
+            </div>
         </a>
         <a class="game" href="Offline-HTML-Games-main/Games/tic-tac-toe.html">
             <img src="thumbnails/TicTacToe.png" alt="Tic Tac Toe Thumbnail">
-            Tic Tac Toe (2 Player)
+            <div class="game-info">
+                <span>Tic Tac Toe (2 Player)</span>
+            </div>
         </a>
         <a class="game" href="off-the-line/index.html">
             <img src="thumbnails/off-the-line.png" alt="off the line Thumbnail">
-            off the line
+            <div class="game-info">
+                <span>off the line</span>
+            </div>
         </a>
     </div>
     
@@ -107,6 +176,10 @@
     <a href="https://github.com/Metroxe/one-html-page-challenge">One html page challenge</a>,
     <a href="https://github.com/ImKennyYip/2048">ImKennyYip</a>
     <a href="https://github.com/js13kGames/off-the-line">js13kGames</a>
+    <a href="https://github.com/ellisonleao/clumsy-bird">ellisonleao</a>
     </p>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
