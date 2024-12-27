@@ -3,7 +3,7 @@
 ## [1.0.2] - 2024-12-27
 ### Added
 - ads by AADS
-- conatact E-mail
+- contanct E-mail
 
 ### Changed
 - 
