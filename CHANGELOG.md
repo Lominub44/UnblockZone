@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.2] - 2024-12-27
+### Added
+- ads by AADS
+- conatact E-mail
+
+### Changed
+- 
+
+### Fixed
+- 
+
+### Coming soon
+- Website tracking, to improve user experience
+- UI-overhaul
+
+
 ## [1.0.1] - 2024-12-26
 ### Added
 - added badges: Home = Homemade, Fire = Hot game

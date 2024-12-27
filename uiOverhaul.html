@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>UnblockZone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             text-align: center;
-            background-color: #f9f9f9;
-            margin: 20;
+            background-color: #f0f4f8;
+            margin: 0;
             padding: 0;
         }
         
         h1 {
-            font-size: 40px;
+            font-size: 48px;
             margin-top: 20px;
-            color: #333;
+            color: #2c3e50;
         }
         
         .game-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
             padding: 20px;
             max-width: 1200px;
@@ -31,19 +32,26 @@
         
         .game {
             text-decoration: none;
-            color: #4CAF50;
+            color: #2980b9;
             font-size: 18px;
-            border: 1px solid #4CAF50;
-            border-radius: 5px;
+            border: 1px solid #2980b9;
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 10px;
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .game:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .game img {
-            width: 200px;
-            height: 200px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
             margin-bottom: 10px;
         }
 
@@ -52,62 +60,57 @@
             align-items: center;
         }
 
-        .new-badge {
-            background-color: red;
+        .badge {
             color: white;
-            padding: 1px 3px;
-            text-align: center;
-            border-radius: 5px;
+            padding: 5px 10px;
+            border-radius: 15px;
             margin-left: 8px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
         }
 
-        .homemade-badge {
-            background-color: blue;
-            color: white;
-            padding: 1px 3px;
-            text-align: center;
-            border-radius: 5px;
-            margin-left: 8px;
+        .badge.homemade {
+            background-color: #3498db; /* Blue for homemade badge */
         }
 
-        a:hover {
-            background-color: #4CAF50;
-            color: white;
+        .badge.new {
+            background-color: #e74c3c; /* Red for new badge */
         }
 
-        .ad-window:hover {
-            background-color: white; !important;
+        .badge ion-icon {
+            margin-right: 4px;
         }
 
         .email-button {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50; /* Grüner Hintergrund */
-            color: white; /* Weiße Schrift */
+            padding: 12px 24px;
+            background-color: #2980b9;
+            color: white;
             text-align: center;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s, transform 0.2s;
         }
 
         .email-button:hover {
-            background-color: #45a049;
+            background-color: #3498db;
+            transform: scale(1.05);
         }
 
     </style>
 </head>
 <body>
     <h1>UnblockZone</h1>
-    <br>
     <p style="font-size: 20px;">Available Games:</p>
     <div class="game-container">
         <a class="game" href="Banana/index.html">
             <img src="thumbnails/Banana.png" alt="Banana Thumbnail">
             <div class="game-info">
                 <span>Banana</span>
-                <span class="homemade-badge"><ion-icon name="home"></ion-icon></span>
+                <span class="badge homemade"><ion-icon name="home"></ion-icon>Homemade</span>
             </div>
         </a>
         <a class="game" href="2048-Game-main/index.html">
@@ -117,15 +120,14 @@
             </div>
         </a>
         <a class="game" href="clumsy-bird/index.html">
-            <img src="thumbnails/clumsy-bird.png" alt="clumsy-bird Thumbnail">
+            <img src="thumbnails/clumsy-bird.png" alt="Clumsy Bird Thumbnail">
             <div class="game-info">
-                <span>clumsy-bird</span>
-                <span class="new-badge"><ion-icon name="flame"></ion-icon></span>
+                <span>Clumsy Bird</span>
+                <span class="badge new"><ion-icon name="flame"></ion-icon>New</span>
             </div>
         </a>
         <a class="ad-window">
-            <iframe data-aa='2372675' src='//ad.a-ads.com/2372675?size=250x250' style='width:250px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
-            
+            <iframe data-aa='2372675' src='//ad.a-ads.com/2372675?size =250x250' style='width:250px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
         </a>
         <a class="game" href="Offline-HTML-Games-main/Games/slopeoffline.html">
             <img src="thumbnails/Slope.png" alt="Slope Thumbnail">
@@ -160,7 +162,7 @@
         <a class="game" href="Offline-HTML-Games-main/Games/mini_car_game.html">
             <img src="thumbnails/MiniCarGame.png" alt="Mini Car Game Thumbnail">
             <div class="game-info">
-                <span>Mini car game</span>
+                <span>Mini Car Game</span>
             </div>
         </a>
         <a class="game" href="Offline-HTML-Games-main/Games/Snakegame.html">
@@ -182,25 +184,22 @@
             </div>
         </a>
         <a class="game" href="off-the-line/index.html">
-            <img src="thumbnails/off-the-line.png" alt="off the line Thumbnail">
+            <img src="thumbnails/off-the-line.png" alt="Off the Line Thumbnail">
             <div class="game-info">
-                <span>off the line</span>
+                <span>Off the Line</span>
             </div>
         </a>
     </div>
     
-    <br>
-    <p>credits: <a href="https://github.com/oldj/html5-tower-defense">oldj</a>,
-    <a href="https://github.com/Dystopia-user181/connect-pipes-polygonal">Dyst opia user181</a>,
-    <a href="https://github.com/Metroxe/one-html-page-challenge">One html page challenge</a>,
-    <a href="https://github.com/ImKennyYip/2048">ImKennyYip</a>
-    <a href="https://github.com/js13kGames/off-the-line">js13kGames</a>
+    <p>Credits: <a href="https://github.com/oldj/html5-tower-defense">oldj</a>,
+    <a href="https://github.com/Dystopia-user181/connect-pipes-polygonal">Dystopia user181</a>,
+    <a href="https://github.com/Metroxe/one-html-page-challenge">One HTML Page Challenge</a>,
+    <a href="https://github.com/ImKennyYip/2048">ImKennyYip</a>,
+    <a href="https://github.com/js13kGames/off-the-line">js13kGames</a>,
     <a href="https://github.com/ellisonleao/clumsy-bird">ellisonleao</a>
     </p>
 
-    <br>
-    <a href="mailto:unblockzone@proton.me" class="email-button">Contact via E-mail <ion-icon name="mail-outline"></ion-icon></a>
-
+    <a href="mailto:unblockzone@proton.me" class="email-button"><ion-icon name="mail-outline"></ion-icon> Contact via E-mail</a>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
