@@ -3,7 +3,8 @@
 ## [1.0.2] - 2024-12-27
 ### Added
 - ads by AADS
-- contanct E-mail
+- contanct E-Mail
+- added button for anime addicts
 
 ### Changed
 - 
