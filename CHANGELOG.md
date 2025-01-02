@@ -15,6 +15,7 @@
 ### Coming soon
 - Website tracking, to improve user experience
 - UI-overhaul
+- "mobile" icons for mobile-compatible games
 
 
 ## [1.0.1] - 2024-12-26
