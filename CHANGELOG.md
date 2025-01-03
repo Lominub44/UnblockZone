@@ -16,7 +16,7 @@
 ### Coming soon
 - Website tracking, to improve user experience
 - UI-overhaul
-
+- fix badges, they dont show propperly
 
 
 ## [1.0.1] - 2024-12-26
